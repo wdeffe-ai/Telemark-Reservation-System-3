@@ -1,1 +1,433 @@
-
+{
+  "seasons": [
+    {
+      "id": "season-winter",
+      "name": "Winter/Off-Season",
+      "startDate": "2024-11-01",
+      "endDate": "2024-04-30",
+      "multiplier": 1.0
+    },
+    {
+      "id": "season-summer",
+      "name": "Summer",
+      "startDate": "2024-05-01",
+      "endDate": "2024-10-31",
+      "multiplier": 1.0
+    }
+  ],
+  "memberTypes": [
+    {
+      "id": "member",
+      "name": "Member",
+      "description": "Regular member"
+    },
+    {
+      "id": "junior-member",
+      "name": "Junior Member",
+      "description": "Junior member (youth)"
+    },
+    {
+      "id": "child-member",
+      "name": "Child Member",
+      "description": "Child member"
+    },
+    {
+      "id": "guest",
+      "name": "Guest",
+      "description": "Non-member guest"
+    },
+    {
+      "id": "junior-guest",
+      "name": "Junior Guest",
+      "description": "Junior non-member guest"
+    },
+    {
+      "id": "child-guest",
+      "name": "Child Guest",
+      "description": "Child non-member guest"
+    }
+  ],
+  "stayTypes": [
+    {
+      "id": "weekday",
+      "name": "Weekday",
+      "description": "Single night weekday stay"
+    },
+    {
+      "id": "2day-weekend-with-meals",
+      "name": "2-Day Weekend with Meals",
+      "nights": 2,
+      "meals": true
+    },
+    {
+      "id": "2day-weekend-without-meals",
+      "name": "2-Day Weekend without Meals",
+      "nights": 2,
+      "meals": false
+    },
+    {
+      "id": "3day-weekend-with-meals",
+      "name": "3-Day Weekend with Meals",
+      "nights": 3,
+      "meals": true
+    },
+    {
+      "id": "3day-weekend-without-meals",
+      "name": "3-Day Weekend without Meals",
+      "nights": 3,
+      "meals": false
+    }
+  ],
+  "rates": [
+    {
+      "id": "rate-001",
+      "season": "season-winter",
+      "stayType": "weekday",
+      "memberType": "member",
+      "roomRate": 30.00,
+      "mealRate": 0.00,
+      "total": 30.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-002",
+      "season": "season-winter",
+      "stayType": "weekday",
+      "memberType": "junior-member",
+      "roomRate": 15.00,
+      "mealRate": 0.00,
+      "total": 15.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-003",
+      "season": "season-winter",
+      "stayType": "weekday",
+      "memberType": "child-member",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-004",
+      "season": "season-winter",
+      "stayType": "weekday",
+      "memberType": "guest",
+      "roomRate": 45.00,
+      "mealRate": 0.00,
+      "total": 45.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-005",
+      "season": "season-winter",
+      "stayType": "weekday",
+      "memberType": "junior-guest",
+      "roomRate": 20.00,
+      "mealRate": 0.00,
+      "total": 20.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-006",
+      "season": "season-winter",
+      "stayType": "weekday",
+      "memberType": "child-guest",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-007",
+      "season": "season-winter",
+      "stayType": "2day-weekend-with-meals",
+      "memberType": "member",
+      "roomRate": 60.00,
+      "mealRate": 20.00,
+      "total": 80.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-008",
+      "season": "season-winter",
+      "stayType": "2day-weekend-with-meals",
+      "memberType": "junior-member",
+      "roomRate": 30.00,
+      "mealRate": 20.00,
+      "total": 50.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-009",
+      "season": "season-winter",
+      "stayType": "2day-weekend-with-meals",
+      "memberType": "child-member",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-010",
+      "season": "season-winter",
+      "stayType": "2day-weekend-with-meals",
+      "memberType": "guest",
+      "roomRate": 90.00,
+      "mealRate": 20.00,
+      "total": 110.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-011",
+      "season": "season-winter",
+      "stayType": "2day-weekend-with-meals",
+      "memberType": "junior-guest",
+      "roomRate": 40.00,
+      "mealRate": 20.00,
+      "total": 60.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-012",
+      "season": "season-winter",
+      "stayType": "2day-weekend-with-meals",
+      "memberType": "child-guest",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-013",
+      "season": "season-winter",
+      "stayType": "2day-weekend-without-meals",
+      "memberType": "member",
+      "roomRate": 60.00,
+      "mealRate": 0.00,
+      "total": 60.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-014",
+      "season": "season-winter",
+      "stayType": "2day-weekend-without-meals",
+      "memberType": "junior-member",
+      "roomRate": 30.00,
+      "mealRate": 0.00,
+      "total": 30.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-015",
+      "season": "season-winter",
+      "stayType": "2day-weekend-without-meals",
+      "memberType": "child-member",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-016",
+      "season": "season-winter",
+      "stayType": "2day-weekend-without-meals",
+      "memberType": "guest",
+      "roomRate": 90.00,
+      "mealRate": 0.00,
+      "total": 90.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-017",
+      "season": "season-winter",
+      "stayType": "2day-weekend-without-meals",
+      "memberType": "junior-guest",
+      "roomRate": 40.00,
+      "mealRate": 0.00,
+      "total": 40.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-018",
+      "season": "season-winter",
+      "stayType": "3day-weekend-with-meals",
+      "memberType": "member",
+      "roomRate": 90.00,
+      "mealRate": 40.00,
+      "total": 130.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-019",
+      "season": "season-winter",
+      "stayType": "3day-weekend-with-meals",
+      "memberType": "junior-member",
+      "roomRate": 45.00,
+      "mealRate": 40.00,
+      "total": 85.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-020",
+      "season": "season-winter",
+      "stayType": "3day-weekend-with-meals",
+      "memberType": "child-member",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-021",
+      "season": "season-winter",
+      "stayType": "3day-weekend-with-meals",
+      "memberType": "guest",
+      "roomRate": 135.00,
+      "mealRate": 40.00,
+      "total": 175.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-022",
+      "season": "season-winter",
+      "stayType": "3day-weekend-with-meals",
+      "memberType": "junior-guest",
+      "roomRate": 60.00,
+      "mealRate": 40.00,
+      "total": 100.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-023",
+      "season": "season-winter",
+      "stayType": "3day-weekend-with-meals",
+      "memberType": "child-guest",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-024",
+      "season": "season-winter",
+      "stayType": "3day-weekend-without-meals",
+      "memberType": "member",
+      "roomRate": 90.00,
+      "mealRate": 0.00,
+      "total": 90.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-025",
+      "season": "season-winter",
+      "stayType": "3day-weekend-without-meals",
+      "memberType": "junior-member",
+      "roomRate": 45.00,
+      "mealRate": 0.00,
+      "total": 45.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-026",
+      "season": "season-winter",
+      "stayType": "3day-weekend-without-meals",
+      "memberType": "child-member",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-027",
+      "season": "season-winter",
+      "stayType": "3day-weekend-without-meals",
+      "memberType": "guest",
+      "roomRate": 135.00,
+      "mealRate": 0.00,
+      "total": 135.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-028",
+      "season": "season-winter",
+      "stayType": "3day-weekend-without-meals",
+      "memberType": "junior-guest",
+      "roomRate": 60.00,
+      "mealRate": 0.00,
+      "total": 60.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-029",
+      "season": "season-winter",
+      "stayType": "3day-weekend-without-meals",
+      "memberType": "child-guest",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-030",
+      "season": "season-summer",
+      "stayType": "weekday",
+      "memberType": "member",
+      "roomRate": 20.00,
+      "mealRate": 0.00,
+      "total": 20.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-031",
+      "season": "season-summer",
+      "stayType": "weekday",
+      "memberType": "junior-member",
+      "roomRate": 10.00,
+      "mealRate": 0.00,
+      "total": 10.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-032",
+      "season": "season-summer",
+      "stayType": "weekday",
+      "memberType": "child-member",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-033",
+      "season": "season-summer",
+      "stayType": "weekday",
+      "memberType": "guest",
+      "roomRate": 30.00,
+      "mealRate": 0.00,
+      "total": 30.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-034",
+      "season": "season-summer",
+      "stayType": "weekday",
+      "memberType": "junior-guest",
+      "roomRate": 15.00,
+      "mealRate": 0.00,
+      "total": 15.00,
+      "currency": "USD"
+    },
+    {
+      "id": "rate-035",
+      "season": "season-summer",
+      "stayType": "weekday",
+      "memberType": "child-guest",
+      "roomRate": 3.00,
+      "mealRate": 0.00,
+      "total": 3.00,
+      "currency": "USD"
+    }
+  ]
+}
