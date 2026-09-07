@@ -1,0 +1,24 @@
+[
+  {
+    "memberNumber": "000001",
+    "firstName": "Alice",
+    "lastName": "Anderson",
+    "phone": "+1-555-0100",
+    "email": "alice@example.com",
+    "address": "123 Snow Lane, Telemark",
+    "sex": "F",
+    "memberType": "Regular",
+    "familyAffiliation": ""
+  },
+  {
+    "memberNumber": "000002",
+    "firstName": "Bob",
+    "lastName": "Brown",
+    "phone": "+1-555-0101",
+    "email": "bob@example.com",
+    "address": "456 Slope Ave, Telemark",
+    "sex": "M",
+    "memberType": "Family",
+    "familyAffiliation": "000001"
+  }
+]

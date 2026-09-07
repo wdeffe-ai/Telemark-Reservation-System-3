@@ -1,0 +1,119 @@
+openapi: 3.0.1
+info:
+  title: Telemark Members API
+  version: 1.0.0
+  description: API for reading and mutating the membership database stored in the repository JSON file.
+servers:
+  - url: https://example.com
+paths:
+  /auth/login:
+    post:
+      summary: Login and receive JWT
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: OK
+  /members:
+    get:
+      summary: List members
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: An array of members
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Member'
+    post:
+      summary: Add a member
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Member'
+      responses:
+        '201':
+          description: Created
+  /members/{memberNumber}:
+    put:
+      summary: Update a member by memberNumber
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: memberNumber
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Updated
+    delete:
+      summary: Delete a member
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: memberNumber
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Deleted
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Member:
+      type: object
+      required:
+        - memberNumber
+        - firstName
+        - lastName
+        - memberType
+      properties:
+        memberNumber:
+          type: string
+          description: 6-digit zero-padded identifier
+        firstName:
+          type: string
+        lastName:
+          type: string
+        phone:
+          type: string
+        email:
+          type: string
+        address:
+          type: string
+        sex:
+          type: string
+        memberType:
+          type: string
+        familyAffiliation:
+          type: string
